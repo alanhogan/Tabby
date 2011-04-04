@@ -31,9 +31,13 @@ I made a small change to better support alternate tag strings besides the actual
 
 ### Caveats / Issues
 
-1. Outdenting only works properly with one single kind of tab string (spaces or tabs).  You should probably standardize input to your preferred kind of tabs (soft or hard) before presenting a Tabby-enabled `textarea` to your users.
+1. Outdenting will not work if there are (hard) tab characters used but `tabby` was initialized with a number of spaces as the `tabString` (i.e. soft tabs), and vice-versa.  You should probably standardize input to your preferred tab string (soft or hard tabs) before presenting a Tabby-enabled `textarea` to your users.
 
 2. Sometimes the selection can change slightly (e.g. grow to include a previous line) when outdenting. Pull requests are welcome!
+
+### Bookmarklet 
+
+[Grab the bookmarklet here](http://alanhogan.com/bookmarklets#tabby).
 
 ### See Also
 
