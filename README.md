@@ -29,9 +29,11 @@ Please see [Ted’s demo here][ted].
 
 I made a small change to better support alternate tag strings besides the actual tab character `\t` (e.g. four spaces).
 
-### Caveats
+### Caveats / Issues
 
-Outdenting only works properly with one single kind of tab string (spaces or tabs).  You should probably standardize input to your preferred kind of tabs (soft or hard) before presenting a Tabby-enabled `textarea` to your users.
+1. Outdenting only works properly with one single kind of tab string (spaces or tabs).  You should probably standardize input to your preferred kind of tabs (soft or hard) before presenting a Tabby-enabled `textarea` to your users.
+
+2. Sometimes the selection can change slightly (e.g. grow to include a previous line) when outdenting. Pull requests are welcome!
 
 ### See Also
 
