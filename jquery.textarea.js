@@ -124,6 +124,7 @@
 		} 
 		// selections will always add/remove tabs from the start of the line
 		else {
+      while (ss < o.value.length && o.value.charAt(ss).match(/[ \t]/)) ss++;
 			// split the textarea up into lines and figure out which lines are included in the selection
 			var lines = o.value.split("\n");
 			var indices = new Array();
