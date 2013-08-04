@@ -49,12 +49,12 @@
 				because both CTRL+TAB and ALT+TAB default to an event (changing tab/window) that 
 				will prevent js from capturing the keyup event, we'll set a timer on releasing them.
 				*/
-				if (17 == kc) {pressed.ctrl = true;	setTimeout("$.fn.tabby.pressed.ctrl = false;",1000);}
-				if (18 == kc) {pressed.alt = true; 	setTimeout("$.fn.tabby.pressed.alt = false;",1000);}
+				if (17 == kc) {pressed.ctrl = true;	setTimeout(function(){$.fn.tabby.pressed.ctrl = false;},1000);}
+				if (18 == kc) {pressed.alt = true; 	setTimeout(function(){$.fn.tabby.pressed.alt = false;},1000);}
 					
 				if (9 == kc && !pressed.ctrl && !pressed.alt) {
 					e.preventDefault; // does not work in O9.63 ??
-					pressed.last = kc;	setTimeout("$.fn.tabby.pressed.last = null;",0);
+					pressed.last = kc;	setTimeout(function(){$.fn.tabby.pressed.last = null;},0);
 					process_keypress ($(e.target).get(0), pressed.shft, options);
 					return false;
 				}
