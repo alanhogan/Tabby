@@ -1,0 +1,27 @@
+{
+  "name": "jquery-tabby",
+  "version": "0.13.1",
+  "description": "A jQuery plugin that allows usage of the tab key to indent and outdent text within a textarea.",
+  "main": "jquery.textarea.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanhogan/Tabby.git"
+  },
+  "keywords": [
+    "tabby",
+    "indent",
+    "outdent",
+    "textarea",
+    "jquery",
+    "jquery-plugin"
+  ],
+  "author": "Ted Devito (updated by Alan Hogan)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/alanhogan/Tabby/issues"
+  },
+  "homepage": "https://github.com/alanhogan/Tabby#readme"
+}
